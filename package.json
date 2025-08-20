@@ -1,13 +1,16 @@
 {
-  "name": "hono-bun-app",
+  "name": "hono-node-app",
   "version": "1.0.0",
   "scripts": {
-    "start": "bun run index.tsx"
+    "build": "tsc",
+    "start": "node dist/index.js"
   },
   "dependencies": {
+    "@hono/node-server": "^1.12.0",
     "hono": "^4.4.13"
   },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/node": "^20.14.10",
+    "typescript": "^5.5.3"
   }
 }
