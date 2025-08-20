@@ -1,7 +1,0 @@
-   # nixpacks.toml
-   
-   [phases.setup]
-   nixPkgs = ["bun"]
-   
-   [start]
-   cmd = "bun run index.tsx"
