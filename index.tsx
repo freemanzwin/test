@@ -6,7 +6,7 @@ import { serve } from '@hono/node-server';
 const app = new Hono();
 
 app.use("/*", cors());
-app.get("/", (c: Context) => c.text("Hello world! Hello world!"));
+app.get("/", (c: Context) => c.text("Hello world! Hello world! Hello world!"));
 app.get("/api/health", (c: Context) => c.json({ status: "ok" }));
 
 const port = Number(process.env.PORT) || 3000;
